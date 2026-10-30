@@ -1,0 +1,23 @@
+*{box-sizing:border-box}
+:root{color-scheme:dark;--bg:#171715;--gold:#b89550;--gold-light:#d4bd87;--ivory:#f1eee6;--muted:#aaa69b}
+html,body{margin:0;min-height:100%;background:var(--bg)}
+body{font-family:"DM Sans",sans-serif;color:var(--ivory)}
+.page{min-height:100svh;position:relative;overflow:hidden;display:flex;flex-direction:column;padding:30px clamp(22px,6vw,88px) 24px;background:radial-gradient(ellipse at 50% 45%,#29271f 0%,#1b1a17 45%,#141412 100%)}
+.texture{position:absolute;inset:0;pointer-events:none;opacity:.13;background-image:linear-gradient(90deg,transparent 49.9%,rgba(184,149,80,.16) 50%,transparent 50.1%),linear-gradient(rgba(184,149,80,.10) 1px,transparent 1px);background-size:100% 100%,100% 74px;mask-image:linear-gradient(to bottom,transparent,black 22%,black 80%,transparent)}
+.header,.footer{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between}
+.brand{display:inline-flex;align-items:center;max-width:230px}
+.brand img{display:block;width:100%;height:auto;max-height:82px;object-fit:contain}
+.header-note{font-size:10px;letter-spacing:.22em;color:var(--muted);font-weight:600}
+.hero{position:relative;z-index:1;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:54px 0 48px;max-width:760px;width:100%;margin:0 auto}
+.eyebrow{display:flex;align-items:center;gap:13px;color:var(--gold-light);font-size:10px;letter-spacing:.24em;font-weight:700}
+.eyebrow span{height:1px;width:27px;background:var(--gold)}
+h1{font-family:"Playfair Display",Georgia,serif;font-size:clamp(54px,9vw,104px);line-height:.98;letter-spacing:-.045em;font-weight:500;margin:34px 0 23px;color:var(--ivory)}
+h1 em{font-weight:500;color:var(--gold-light)}
+.intro{max-width:550px;margin:0;color:#c2beb3;font-size:clamp(14px,1.5vw,17px);line-height:1.9;font-weight:400}
+.rule{display:flex;align-items:center;justify-content:center;width:100%;margin:34px 0 28px}
+.rule span{width:54px;height:1px;background:var(--gold)}
+.coming{font-size:10px;letter-spacing:.25em;color:var(--gold-light);font-weight:700}
+.subcopy{margin:11px 0 25px;color:var(--muted);font-size:14px}
+.anniversary{width:100px;height:auto;max-height:92px;object-fit:contain}
+.footer{border-top:1px solid rgba(184,149,80,.22);padding-top:17px;color:#8f8a7e;font-size:10px;letter-spacing:.08em}
+@media(max-width:600px){.page{padding:22px 22px 18px}.brand{max-width:178px}.brand img{max-height:66px}.header-note{font-size:8px;letter-spacing:.13em}.hero{padding:48px 0 42px}.eyebrow{font-size:8px;letter-spacing:.16em;gap:8px}.eyebrow span{width:17px}.intro{font-size:14px}.footer{font-size:9px;gap:12px}.footer span:last-child{text-align:right}}
